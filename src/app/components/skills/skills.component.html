@@ -1,0 +1,32 @@
+<section id="skills" class="skills-section">
+  <div class="skills-container">
+    <h2 class="skills-title">Skills</h2>
+    
+    <div class="skills-category">
+      <h3 class="category-title">Programming Languages</h3>
+      <div class="skills-list">
+        <span *ngFor="let lang of skills.languages" class="skill-item">
+          {{ lang }}
+        </span>
+      </div>
+    </div>
+    
+    <div class="skills-category">
+      <h3 class="category-title">Frameworks & Libraries</h3>
+      <div class="skills-list">
+        <span *ngFor="let framework of skills.frameworks" class="skill-item">
+          {{ framework }}
+        </span>
+      </div>
+    </div>
+    
+    <div class="skills-category">
+      <h3 class="category-title">Tools & Platforms</h3>
+      <div class="skills-list">
+        <span *ngFor="let tool of skills.tools" class="skill-item">
+          {{ tool }}
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
